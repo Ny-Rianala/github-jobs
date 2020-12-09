@@ -7,7 +7,6 @@ import JobList from './JobList';
 
 
 
-
 const AppStyle = styled.div`
     background: whitesmoke;
 `

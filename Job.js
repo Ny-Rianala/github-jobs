@@ -1,12 +1,9 @@
-import React, { useContext } from 'react';
-import {Context} from "./Context";
+import React from 'react';
 import { Link } from 'react-router-dom'
-import JobList from "./JobList";
 
 
 function Job() {
-    const  { jobs } = useContext(Context);
-
+    // const  { jobs } = useContext(Context);
 
     const getJobsInfo = () => {
         return (

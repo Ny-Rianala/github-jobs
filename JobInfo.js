@@ -12,7 +12,7 @@ function JobInfo() {
     return (
         <div>
             <p>Heey</p>
-            {job?.title}
+            {job?.description}
         </div>
     )
 }

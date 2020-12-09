@@ -35796,15 +35796,7 @@ exports.Context = Context;
 function ContextProvider({
   children
 }) {
-  const [jobs, setJobs] = (0, _react.useState)([]); // const searchJobs = async(e) => {
-  //     e.preventDefault();
-  //     console.log("Submitting");
-  //     const url ="https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?page=1&search=code";
-  //         const res = await fetch(url);
-  //         const jobData = await res.json();
-  //         setJobs(jobData);
-  //         console.log(jobData);
-  // }
+  const [jobs, setJobs] = (0, _react.useState)([]);
 
   const getJobList = async () => {
     const LIST_OF_JOBS_URL = "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=ruby&page=1";
@@ -35814,7 +35806,6 @@ function ContextProvider({
   };
 
   (0, _react.useEffect)(() => {
-    // searchJobs();
     getJobList();
   }, []);
   return /*#__PURE__*/_react.default.createElement(Context.Provider, {
@@ -35886,7 +35877,7 @@ function JobInfo() {
     jobId
   } = (0, _reactRouterDom.useParams)();
   const job = jobs.find(job => job.id == jobId);
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Heey"), job?.title);
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Heey"), job?.description);
 }
 
 var _default = JobInfo;
