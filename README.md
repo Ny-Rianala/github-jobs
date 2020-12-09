@@ -74,11 +74,15 @@ Template for your readme :
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
--   Where can I see your demo?
--   What was your experience?
--   In a few sentences, explain the structure of your project.
--   If you had more time, what area of your project would you improve?
--   Did you learn anything new while working on this project?
+- Where can I see your demo? 
+- What was your experience?  
+ **In a few sentences, explain the structure of your project.**
+   - Firstly, I created an input search so that the user can type in that input to search for a job.  
+   -  Secondly, I fetched a data inside of a **Context.js file** and added in a state so that it can be used anywhere in the project.  
+  - Thirdly, I added a file called **JobList.js** to get some list of jobs.    
+  **If you had more time, what area of your project would you improve?**  
+  - If I had more time, I would work in the search input and the search options.  
+-Did you learn anything new while working on this project?
 -   What was the most challenging part for you?
 -   Any other comments?
 
