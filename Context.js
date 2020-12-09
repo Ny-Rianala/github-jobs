@@ -23,7 +23,6 @@ function ContextProvider ({ children }) {
                     const res = await fetch(LIST_OF_JOBS_URL);
                     const data = await res.json();
                     setJobs(data);
-                    console.log(data);
                 }
                 
     useEffect(() => {

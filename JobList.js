@@ -8,11 +8,13 @@ import { Link } from "react-router-dom";
 const ListStyle = styled.ul`
     background: white;
     display: flex;
-    flex-direction: column;
-    align-items: space-between;
+    flex-direction: row;
+    justify-content: space-between;
     list-style: none;
     border-radius: 4px;
     box-shadow: 5px 5px 14px -8px #000000;
+    text-decoration: none;
+    
     li {
         padding: 20px;
         margin: 0;
@@ -21,6 +23,14 @@ const ListStyle = styled.ul`
     li a {
         list-style: none;
         text-decoration: none;
+    }
+    img {
+        max-width: 80%;
+        display: flex;
+        float: left;
+    }
+    .logo {
+        align-items: left;
     }
 `
 
@@ -37,14 +47,14 @@ return (
             return (
                 <Link to={`/job/${job.id}`} key={job.id}>
                         <ListStyle key={job.id}>
+                            <div className="logo">
+                                <img src={job.company_logo}/> 
+                            </div>
                             <div>
                                 <div>{job.company}</div>
                                 <div>{job.title}</div>
                                 <div>{job.location}</div>
-                            </div>
-                            <div>
                                 <div>{job.company}</div>
-                                {/* <img src={job.url.poster_post}/> */}
                             </div>
                         </ListStyle>
                 </Link>

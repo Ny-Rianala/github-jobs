@@ -4,7 +4,7 @@ import styled from "styled-components";
 import SearchBar from './SearchBar';
 import JobInfo from './JobInfo';
 import JobList from './JobList';
-import Job from "./Job"
+
 
 
 
@@ -18,11 +18,11 @@ function App() {
             <h1>Github Jobs</h1>
             <SearchBar />
             <Switch>
-                <Route exact path="job/:jobId">
-                    <JobInfo />
-                </Route>
                 <Route exact path="/">
                     <JobList />
+                </Route>
+                <Route exact path="job/:jobId">
+                    <JobInfo />
                 </Route>
             </Switch>
         </ AppStyle>
