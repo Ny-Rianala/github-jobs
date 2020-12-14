@@ -20,7 +20,7 @@ function App() {
                 <Route exact path="/">
                     <JobList />
                 </Route>
-                <Route exact path="job/:jobId">
+                <Route path="/job/:jobId">
                     <JobInfo />
                 </Route>
             </Switch>

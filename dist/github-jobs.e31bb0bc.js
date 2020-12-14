@@ -35877,7 +35877,10 @@ function JobInfo() {
     jobId
   } = (0, _reactRouterDom.useParams)();
   const job = jobs.find(job => job.id == jobId);
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Heey"), job?.description);
+  console.log(job);
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("img", {
+    src: job?.company_logo
+  }), /*#__PURE__*/_react.default.createElement("div", null, job?.company), /*#__PURE__*/_react.default.createElement("p", null, job?.description));
 }
 
 var _default = JobInfo;
@@ -35985,8 +35988,7 @@ function App() {
     exact: true,
     path: "/"
   }, /*#__PURE__*/_react.default.createElement(_JobList.default, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    exact: true,
-    path: "job/:jobId"
+    path: "/job/:jobId"
   }, /*#__PURE__*/_react.default.createElement(_JobInfo.default, null))));
 }
 
@@ -36036,7 +36038,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53739" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50527" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

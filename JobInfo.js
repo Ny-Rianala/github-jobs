@@ -8,11 +8,13 @@ function JobInfo() {
 
 
     const job = jobs.find(job => job.id == jobId);
+    console.log(job);
 
     return (
         <div>
-            <p>Heey</p>
-            {job?.description}
+            <img src={job?.company_logo}/> 
+            <div>{job?.company}</div>
+            <p>{job?.description}</p>
         </div>
     )
 }
