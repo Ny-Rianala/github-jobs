@@ -5,7 +5,7 @@ import App from './App';
 import { ContextProvider }  from "./Context";
 
 ReactDOM.render(
-    <ContextProvider>
+    <ContextProvider>   
         <Router>
            <App />
         </Router>

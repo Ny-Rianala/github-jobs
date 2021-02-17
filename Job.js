@@ -8,7 +8,7 @@ function Job() {
     const getJobsInfo = () => {
         return (
             <Link to={`/job/${job.id}`} key={job.id}>
-                <p>{job.ttitle}</p>
+                <p>{job.title}</p>
             </Link>
         )
     }

@@ -37,8 +37,8 @@ h1 {
 .button {
     background-color: rgb(76, 165, 238);
     padding: 10px 20px;
-    
     border: none;
     color: white;
+    max-height: 50%;
 }
 

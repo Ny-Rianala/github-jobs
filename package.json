@@ -22,10 +22,8 @@
     "react-router-dom": "^5.2.0",
     "styled-components": "^5.2.1"
   },
-    "browserslist": [
-      "last 1 chrome versions"
-     ]
- 
+  "browserslist": [
+    "last 1 chrome versions"
+  ],
+  "devDependencies": {}
 }
-
-
